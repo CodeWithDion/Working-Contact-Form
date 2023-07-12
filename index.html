@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contact Me</h1>
+        <form action="https://formsubmit.co/2ff9e3d0519364bfb6f4edd1abe7e676" method="POST">
+            <!-- =======Honeypot =====-->
+            <input type="text" name="_honey" style="display: none;">
+
+            <!-- =======To remove the captcha =====-->
+            <input type="hidden" name="_captcha" value="false">
+
+            <!-- =======Make the link to success page =====-->
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/success.html">
+
+            <div class="firstname__container">
+
+                <label for="firstName">First Name</label>
+                <input type="text" name="name" id="firstName" required>
+            </div>
+            <div class="lastname__container">
+                <label for="lastName">Last Name</label>
+                <input type="text" name="Last&nbsp;Name" id="lastName" required>
+            </div>
+            <div class="email__container">
+                <label for="emailInfo">Email</label>
+                <input type="email" name="email" id="emailInfo" required>
+            </div>
+            <div class="phone__container">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="text" name="phone" id="phoneNumber">
+            </div>
+            <div class="comment__container">
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comment" cols="30" rows="10" required></textarea>
+            </div>
+            <div>
+                <button class="btn" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
